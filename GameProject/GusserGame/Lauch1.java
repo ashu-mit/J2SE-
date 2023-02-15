@@ -5,10 +5,19 @@ import java.util.Scanner;
 public class Lauch1 {
 
     public static void main(String[] args) {
-        umpire ump=new umpire();
-        ump.InputFromGusser();
-        ump.InputFromPlayer();
-        ump.Compare();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("how much you want to play");
+        int a = sc.nextInt();
+        for(int i=1;i<=a;i++){
+            umpire ump=new umpire();
+            ump.InputFromGusser();
+            ump.InputFromPlayer();
+            ump.Compare();
+        }
+
+
+
+
     }
 }
 
