@@ -64,11 +64,33 @@ class umpire
     {
         if(guessNumByGusser==guessNumByPlayer1)
         {
-            System.out.println("player 1 is winner");
+            {
+                if(guessNumByGusser==guessNumByPlayer2 && guessNumByGusser==guessNumByPlayer3)
+                {
+                    System.out.println("All are winner");
+                }
+                else if (guessNumByGusser==guessNumByPlayer2)
+                {
+                    System.out.println("player 1 and 2 are winner");
+                }
+                else if (guessNumByGusser==guessNumByPlayer3)
+                {
+                    System.out.println("player 1 and 3 are winner");
+                }
+                else {
+                    System.out.println("player 1 and 2 are winner");
+                }
+            }
         }
-        else if(guessNumByGusser==guessNumByPlayer2)
-        {
-            System.out.println("player 2 is winner");
+        else if(guessNumByGusser==guessNumByPlayer2) {
+            if (guessNumByGusser == guessNumByPlayer3)
+            {
+                System.out.println("player 2 and 3 are winner");
+            }
+            else
+            {
+                System.out.println("player 2 is winner");
+            }
         }
         else if(guessNumByGusser==guessNumByPlayer3)
         {
